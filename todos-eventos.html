@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Completo - OYO Solution</title>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #000000; z-index: 99999;
+            display: flex; justify-content: center; align-items: center;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        #oyo-draw { width: 400px; max-width: 90vw; height: auto; }
+        .draw-text-oyo {
+            font-size: 75px; font-family: 'SF Pro Display', sans-serif; font-weight: 800;
+            fill: transparent; stroke: #d645d8; stroke-width: 2px;
+            stroke-dasharray: 800; stroke-dashoffset: 800;
+            animation: drawLine 2s ease forwards, fillTextNeon 1s ease 1.8s forwards;
+        }
+        .draw-text-solutions {
+            font-size: 20px; font-family: 'SF Pro Display', sans-serif; font-weight: 300; letter-spacing: 12px;
+            fill: transparent; stroke: #ffffff; stroke-width: 1px;
+            stroke-dasharray: 500; stroke-dashoffset: 500;
+            animation: drawLine 2s ease 0.5s forwards, fillTextWhite 1s ease 2.2s forwards;
+        }
+        @keyframes drawLine { to { stroke-dashoffset: 0; } }
+        @keyframes fillTextNeon { to { fill: url(#neon-grad); stroke-width: 0; } }
+        @keyframes fillTextWhite { to { fill: #ffffff; stroke-width: 0; } }
+        body.loaded #preloader { opacity: 0; visibility: hidden; pointer-events: none; }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <svg id="oyo-draw" viewBox="0 0 500 150">
+            <defs>
+                <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#d645d8; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4158f6; stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" class="draw-text-oyo">OYO</text>
+            <text x="52%" y="90%" dominant-baseline="middle" text-anchor="middle" class="draw-text-solutions">SOLUTIONS</text>
+        </svg>
+    </div>
+    <header class="cabecalho">
+        <div class="logo-texto">OYO <span>SOLUTION</span></div>
+        <div class="menu-hamburguer" id="menu-hamburguer">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#portfolio">Portfólio</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-interna animar-scroll">
+        <h1>Nosso Portfólio</h1>
+        <p>Explore todos os nossos projetos e eventos realizados com excelência.</p>
+    </section>
+
+    <main class="galeria-grid-completa animar-scroll">
+        
+        <a href="carnatal.html" class="portfolio-item">
+            <img src="img/carnatal_capa.png" alt="CARNATAL 2025"> 
+            <div class="overlay">
+                <h3>CARNATAL 2025</h3>
+            </div>
+        </a>
+
+        <a href="expo.html" class="portfolio-item">
+            <img src="img/expo1.jpeg" alt="EXPO MARANHÃO">
+            <div class="overlay">
+                <h3>EXPO MARANHÃO</h3>
+            </div>
+        </a>
+
+        <a href="mrv.html" class="portfolio-item">
+            <img src="img/mrv-capa.jpeg" alt="CONVENÇÃO DA MRV">
+            <div class="overlay">
+                <h3>CONVENÇÃO DA MRV</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="ESTRUTURA DE SOM">
+            <div class="overlay">
+                <h3>ESTRUTURA DE SOM</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="PALCO CORPORATIVO">
+            <div class="overlay">
+                <h3>PALCO CORPORATIVO</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="PAINEL DE LED">
+            <div class="overlay">
+                <h3>PAINEL DE LED</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="ILUMINAÇÃO CÊNICA">
+            <div class="overlay">
+                <h3>ILUMINAÇÃO CÊNICA</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="PALCO CORPORATIVO 2">
+            <div class="overlay">
+                <h3>PALCO CORPORATIVO 2</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="EVENTO AUTOMOTIVO">
+            <div class="overlay">
+                <h3>EVENTO AUTOMOTIVO</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="SHOW NACIONAL">
+            <div class="overlay">
+                <h3>SHOW NACIONAL</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="CENOGRAFIA 3D">
+            <div class="overlay">
+                <h3>CENOGRAFIA 3D</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="STAND FEIRA">
+            <div class="overlay">
+                <h3>STAND FEIRA</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="CONGRESSO MÉDICO">
+            <div class="overlay">
+                <h3>CONGRESSO MÉDICO</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="FESTIVAL DE VERÃO">
+            <div class="overlay">
+                <h3>FESTIVAL DE VERÃO</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="MONTAGEM BOX TRUSS">
+            <div class="overlay">
+                <h3>MONTAGEM BOX TRUSS</h3>
+            </div>
+        </a>
+
+        <a href="#" class="portfolio-item">
+            <img src="img/oyo_logo.png" alt="FORMATURA PREMIUM">
+            <div class="overlay">
+                <h3>FORMATURA PREMIUM</h3>
+            </div>
+        </a>
+
+    </main> 
+    
+    <div style="text-align: center; padding: 40px 0;" class="animar-scroll container-navegacao">
+        <a href="index.html" class="btn-voltar">← Voltar para a Página Inicial</a>
+    </div>
+
+    <footer class="rodape">
+        <p>&copy; 2026 OYO Solution. Todos os direitos reservados. Transformando eventos em espetáculos.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
